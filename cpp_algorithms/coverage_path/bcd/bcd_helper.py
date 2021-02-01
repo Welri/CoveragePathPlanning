@@ -55,7 +55,6 @@ def backtracking_list(memory, _, matrix, x, y):
         closest_point_idx = ((backtrack_points - np.array([x,y]))**2).sum(axis = 1).argmin()
         return tuple(backtrack_points[closest_point_idx]), False
 
-
 def visit(matrix, x, y, memory):
     matrix[(x,y)] = 150 # 150 == visited
     memory.append((x, y))

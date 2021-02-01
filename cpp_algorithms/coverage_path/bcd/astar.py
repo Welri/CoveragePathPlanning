@@ -7,7 +7,6 @@ def heuristic(start, goal):
     dy = abs(start[1] - goal[1])
     return D * (dx + dy) + (D2 - 2 * D) * min(dx, dy)
 
-
 def get_vertex_neighbours(pos, diameter, width, height):
     n = []
     # Moves allow link a chess king
@@ -18,7 +17,6 @@ def get_vertex_neighbours(pos, diameter, width, height):
             continue
         n.append((x2, y2))
     return n
-
 
 def astar_search(start, end, graph, diameter, width, height):
 
