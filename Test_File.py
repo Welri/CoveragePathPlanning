@@ -24,28 +24,28 @@ imshow_scatter(start_points,color="black")
 dist_maps = [dist_fill(drone_maps[i],[start_points[i]]) for i in range(n)]
 [imshow(dist_maps[i],1,4,i+2) for i in range(n)]
 print("hi")
-plt.show()
-
-# plt.figure()
-coverage_paths = [wavefront(drone_maps[i],start_points[i]) for i in range(n)]
-imshow(A,1,4,1, figsize=(20,5))
-for i in range(n):
-    imshow(dist_maps[i],1,4,i+2)
-    plot(coverage_paths[i],color="white",alpha=0.6)
-    end_point = coverage_paths[i][-1]
-    imshow_scatter(start_points[i], color="green")
-    imshow_scatter(end_point, color="red")
 # plt.show()
 
 # plt.figure()
-coverage_paths = [bcd(drone_maps[i],start_points[i]) for i in range(n)]
-imshow(A,1,4,1, figsize=(20,5))
-for i in range(n):
-    imshow(dist_maps[i],1,4,i+2)
-    plot(coverage_paths[i],color="white",alpha=0.6)
-    end_point = coverage_paths[i][-1]
-    imshow_scatter(start_points[i], color="green")
-    imshow_scatter(end_point, color="red")
+# coverage_paths = [wavefront(drone_maps[i],start_points[i]) for i in range(n)]
+# imshow(A,1,4,1, figsize=(20,5))
+# for i in range(n):
+#     imshow(dist_maps[i],1,4,i+2)
+#     plot(coverage_paths[i],color="white",alpha=0.6)
+#     end_point = coverage_paths[i][-1]
+#     imshow_scatter(start_points[i], color="green")
+#     imshow_scatter(end_point, color="red")
+# plt.show()
+
+# plt.figure()
+# coverage_paths = [bcd(drone_maps[i],start_points[i]) for i in range(n)]
+# imshow(A,1,4,1, figsize=(20,5))
+# for i in range(n):
+#     imshow(dist_maps[i],1,4,i+2)
+#     plot(coverage_paths[i],color="white",alpha=0.6)
+#     end_point = coverage_paths[i][-1]
+#     imshow_scatter(start_points[i], color="green")
+#     imshow_scatter(end_point, color="red")
 # plt.show()
 
 # plt.figure()
